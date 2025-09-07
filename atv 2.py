@@ -5,7 +5,7 @@ nome=input("Digite seu nome:")
 sexo=input("Digite seu sexo:")
 estado_civil=input("digite seu estado civil:") 
 
-match sexo:
+match sexo: 
     
     case "masculino":  
 
@@ -13,23 +13,18 @@ match sexo:
         print(f"o seu sexo é {sexo}")
         print(f"o seu estado civil é {estado_civil}")
 
-     
- 
     case "feminino":
-         
-        if estado_civil=="casada":
-         quanto=int(input("digite o tempo de casada:"))
-
       
         print(f"o seu nome é {nome}")
         print(f"o seu sexo é {sexo}")
         print(f"o seu estado civil é {estado_civil}") 
-        print(f"o seu tempo de casada é {quanto} anos") 
+
+        if estado_civil == "casada":
+            quanto_tempo=input("quantos anos:") 
+            print(f"{quanto_tempo} anos")
 
     case _: 
-        print(f"o seu nome é {nome}")
-        print(f"o seu sexo é {sexo}")
-        print(f"o seu estado civil é {estado_civil}")
+        print("dados nao achado")
 
 
     

@@ -17,6 +17,6 @@ elif media <6:
 
 print(f"o resultado da soma é {soma}")
 print(f"o resultado da divisao é {divisao}")
-print(f"resultado da media é {media}")
+print(f"resultado da media é {media:.2f}")
 
 print("Ate logo")
